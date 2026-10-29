@@ -1,0 +1,45 @@
+@font-face{font-family:"Atkinson Hyperlegible";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/atkinson-hyperlegible-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Atkinson Hyperlegible";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/atkinson-hyperlegible-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/bricolage-grotesque-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-weight:800;font-style:normal;font-display:swap;src:url(fonts/bricolage-grotesque-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Kalam";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/kalam-latin-700-normal.woff2) format("woff2")}
+
+html{scroll-behavior:smooth}
+body{margin:0;background:#FBFCFE;color:#262A33;font-family:"Atkinson Hyperlegible",system-ui,sans-serif}
+a{color:#1B3FA0}a:hover{color:#12296B}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #FFB800;outline-offset:3px;border-radius:6px}
+summary{cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+
+/* Formulario lista de espera */
+.form{max-width:640px;margin:0 auto;text-align:left;background:#FFFFFF;border:1px solid #E3D9A6;border-radius:14px;padding:32px 30px;box-shadow:6px 8px 0 rgba(27,63,160,.10)}
+.form .row{margin-bottom:18px}
+.form label,.form legend{display:block;font-weight:700;font-size:16px;color:#12296B;margin-bottom:6px}
+.form .opt{font-weight:400;color:#5A6372;font-size:14px}
+.form input[type=text],.form input[type=email],.form select,.form textarea{width:100%;box-sizing:border-box;font:400 17px "Atkinson Hyperlegible",sans-serif;color:#262A33;padding:12px 14px;border:1.5px solid #C9D6E8;border-radius:10px;background:#FBFCFE;min-height:48px}
+.form textarea{min-height:90px;resize:vertical}
+.form fieldset{border:0;margin:0 0 18px;padding:0}
+.form .choice{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:16px;color:#262A33;margin:0;padding:8px 0;cursor:pointer}
+.form .choice input{margin-top:4px;width:18px;height:18px;flex:none;accent-color:#1B3FA0}
+.form .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:560px){.form{padding:24px 18px}.form .two{grid-template-columns:1fr}}
+.form .legal{font-size:14px;color:#5A6372;line-height:1.5}
+.form button{width:100%;margin-top:6px;border:0;cursor:pointer;background:#1B3FA0;color:#FFFFFF;font:700 19px "Atkinson Hyperlegible",sans-serif;padding:16px 24px;border-radius:12px;box-shadow:4px 4px 0 #12296B;min-height:52px}
+.form button:hover{background:#12296B}
+.hp{position:absolute;left:-9999px}
+
+/* Páginas legales */
+.doc{max-width:760px;margin:0 auto;padding:24px 24px 72px;font-size:17px;line-height:1.65}
+.doc h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(32px,5vw,46px);line-height:1.05;letter-spacing:-.03em;color:#12296B;margin:24px 0 8px}
+.doc h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;color:#12296B;margin:32px 0 6px}
+.doc .updated{color:#5A6372;font-size:15px;margin:0 0 24px}
+.doc table{border-collapse:collapse;width:100%;margin:8px 0}
+.doc td{border-bottom:1px solid #DCE7F3;padding:10px 8px;vertical-align:top}
+.doc td:first-child{font-weight:700;color:#12296B;width:34%}
+.top{max-width:1200px;margin:0 auto;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{text-decoration:none;position:relative;display:inline-block;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-.05em;color:#1B3FA0}
+.logo .hl{position:absolute;left:-4px;right:-4px;bottom:3px;height:13px;background:#FFE45C;transform:rotate(-2deg)}
+.logo .tx{position:relative}
+.foot{max-width:1200px;margin:0 auto;padding:28px 24px 40px;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:15px;color:#5A6372;border-top:1px solid #DCE7F3}
+.foot a{color:#5A6372}
